@@ -1,0 +1,146 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:left
+    
+}
+
+header .logo{
+    margin-left: 4px;
+    color: var(--vermelho);
+    font-family: 'Helvetica', Times; /*mudança*/
+    font-size:30px;
+    padding-bottom: 20px; /*mudança*/
+    padding-top: 20px; /*mudança*/
+}
+
+header nav a{
+    text-decoration:none;
+    color:rgb(255, 254, 254);
+    margin-right: 20px;
+   
+}
+
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%),  url('https://www.themoviedb.org/t/p/original/nzMmMevQsL6HvHfi4rwNT0xLNuu.jpg');
+
+    height:600px;/*mudança*/
+    background-size:cover;
+ 
+
+    display: inline-block; /*mudança*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(223, 214, 214, 0.323);
+    border:none;
+    color: white;
+    
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 40px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin-top:5px;
+    
+}
+
+.pesquisar {
+    margin-left: 690px;
+    font-size: 120%;
+    background-color: #141414;
+    border:none;
+    color: white;
+
+  
+}
+
+.menu{
+
+    margin-left: 30px;
+    font-size: 14px;
+
+}
+
+.avisos{
+    margin-left: 40px;
+    font-size: 120%;
+    background-color: #141414;
+    border:none;
+    color: white;
+}
